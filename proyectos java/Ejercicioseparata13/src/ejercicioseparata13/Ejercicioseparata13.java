@@ -10,17 +10,23 @@ public class Ejercicioseparata13 {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        double i,h,hstr,salario;
-        Scanner teclado=new Scanner(System.in);
-        System.out.print(" INGRESE Horas trabajadas: ");
-        hstr=teclado.nextDouble(); 
-        salario=hstr*30; 
-        for (i=1;i<=hstr;i++) 
+        int numobre=5,tnomina=0,ht=0,salario=0;
+        Scanner tc = new Scanner(System.in);
+        while(numobre>0)
         {
-        System.out.println("HORAS TRABAJADAS: " + i);
+        System.out.print("Ingrese horas trabajadas:");
+        ht=tc.nextInt();
+         salario=ht*30;
+         tnomina=tnomina+salario;
+         System.out.println("Numeros Obreros:"+numobre);
+         System.out.println("Salario:"+salario);
+         System.out.println("Nomina Salarial:"+tnomina);
+         numobre=numobre-1;
         }
-        System.out.println("TU SALARIO ES: "+salario);
-
+        
+        
+    
+    
        
         
         
